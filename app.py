@@ -1,4 +1,4 @@
-from flask import Flask, render_template,url_for
+from flask import Flask, render_template,url_for, jsonify
 
 app = Flask(__name__)
 
@@ -18,5 +18,8 @@ def index():
 def contact():
     return render_template('contact.html', contacts=my_contacts, tltle='Contacts')
 
+@app.route('/api_myContact')
+def api_contact():
+    return jsonify(my_contacts)
 if __name__ == '__main__':
   app.run(debug=True)
