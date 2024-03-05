@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block title %}
+{{title}}
+{% endblock %}
+{% block container %}
+<h1>{{tltle}}</h1>
+{% for c in contacts%}
+<h1>{{c.id}}</h1>
+{% endfor %}
+{% endblock %}
