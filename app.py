@@ -7,6 +7,7 @@ my_contacts = [
     {'id':2,'name':'thawitchai'},
     {'id':3,'name':'thawitchai'},
     {'id':4,'name':'thawitchai'},
+    {'id':5,'name':'Pam Pam'},
 ]
 
 @app.route('/')
