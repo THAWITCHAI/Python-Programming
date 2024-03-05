@@ -4,7 +4,20 @@
 {% endblock %}
 {% block container %}
 <h1>{{tltle}}</h1>
-{% for c in contacts%}
-<h1>{{c.id}}</h1>
-{% endfor %}
+<table>
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for c in contacts%}
+        <tr>
+        <td>{{c.id}}</td>
+        <td>{{c.name}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
 {% endblock %}
